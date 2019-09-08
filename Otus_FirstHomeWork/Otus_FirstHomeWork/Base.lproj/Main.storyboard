@@ -13,7 +13,7 @@
         <!--Profile-->
         <scene sceneID="1Ur-Yv-iKQ">
             <objects>
-                <viewController id="cQT-7K-PBh" sceneMemberID="viewController">
+                <viewController id="cQT-7K-PBh" customClass="ProfileVC" customModule="Otus_FirstHomeWork" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZdH-ZU-gb6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,14 +61,17 @@
         <!--Feed-->
         <scene sceneID="PXt-Ki-q9e">
             <objects>
-                <viewController id="qh9-wV-R0V" customClass="ViewController" customModule="Otus_FirstHomeWork" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qh9-wV-R0V" customClass="FeedVC" customModule="Otus_FirstHomeWork" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d00-zS-mgC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GN0-KC-jh5">
-                                <rect key="frame" x="178" y="723" width="58" height="30"/>
-                                <state key="normal" title="Кнопка)"/>
+                                <rect key="frame" x="179" y="723" width="56" height="30"/>
+                                <state key="normal" title="Next VC"/>
+                                <connections>
+                                    <segue destination="ju3-b2-uzl" kind="show" id="WDC-2g-bSX"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is Feed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2f-43-mnv">
                                 <rect key="frame" x="161" y="440" width="92" height="21"/>
@@ -92,6 +95,62 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zrs-e8-WGe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2652.1739130434785" y="126.5625"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="obC-Du-afs">
+            <objects>
+                <viewController id="ju3-b2-uzl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XMf-uu-LAp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yir-gO-IBE">
+                                <rect key="frame" x="184" y="723" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="Quv-4O-4IF" kind="show" id="6Cf-l9-mU0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yir-gO-IBE" firstAttribute="centerX" secondItem="TdG-lO-dUk" secondAttribute="centerX" id="HGl-m9-vtd"/>
+                            <constraint firstItem="TdG-lO-dUk" firstAttribute="bottom" secondItem="yir-gO-IBE" secondAttribute="bottom" constant="60" id="bzQ-b2-Zr4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TdG-lO-dUk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wed-9b-VAo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3385" y="126"/>
+        </scene>
+        <!--Third FeedVC-->
+        <scene sceneID="SXs-cJ-wkQ">
+            <objects>
+                <viewController id="Quv-4O-4IF" customClass="ThirdFeedVC" customModule="Otus_FirstHomeWork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oyn-d6-CSK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7D-oh-nqI">
+                                <rect key="frame" x="149.5" y="723" width="115" height="30"/>
+                                <state key="normal" title="return to root VC"/>
+                                <connections>
+                                    <action selector="returnToRootVCButtonDidTapped:" destination="Quv-4O-4IF" eventType="touchUpInside" id="wwc-Ce-6JG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="f7D-oh-nqI" firstAttribute="centerX" secondItem="UES-xw-vEz" secondAttribute="centerX" id="3JZ-cR-gSj"/>
+                            <constraint firstItem="UES-xw-vEz" firstAttribute="bottom" secondItem="f7D-oh-nqI" secondAttribute="bottom" constant="60" id="i2h-tD-lLh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UES-xw-vEz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S9h-AP-wDN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4101" y="126"/>
         </scene>
         <!--Menu-->
         <scene sceneID="qaa-uD-0zG">
@@ -214,7 +273,7 @@
         <!--Benchmark-->
         <scene sceneID="FHB-de-m4c">
             <objects>
-                <viewController id="8gT-l9-f0l" sceneMemberID="viewController">
+                <viewController id="8gT-l9-f0l" customClass="BenchmarkVC" customModule="Otus_FirstHomeWork" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XD3-pb-YvC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
