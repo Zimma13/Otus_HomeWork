@@ -12,6 +12,10 @@
 		2E0A7F7E23173EED0056EC83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E0A7F7C23173EED0056EC83 /* Main.storyboard */; };
 		2E0A7F8023173EF10056EC83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E0A7F7F23173EF10056EC83 /* Assets.xcassets */; };
 		2E0A7F8323173EF10056EC83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E0A7F8123173EF10056EC83 /* LaunchScreen.storyboard */; };
+		2E64BA762330053300251C89 /* SessionSummaryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E64BA752330053300251C89 /* SessionSummaryVC.swift */; };
+		2E64BA802331A64900251C89 /* BenchmarkVCCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E64BA7E2331A64900251C89 /* BenchmarkVCCVCell.swift */; };
+		2E64BA812331A64900251C89 /* BenchmarkVCCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E64BA7F2331A64900251C89 /* BenchmarkVCCVCell.xib */; };
+		2E64BA842331A67800251C89 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E64BA832331A67800251C89 /* NibLoadable.swift */; };
 		2E85A5F3231DDE8E00D5CA8A /* CustomButtonInProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E85A5F2231DDE8E00D5CA8A /* CustomButtonInProfileVC.swift */; };
 		2E85A5F7231DE20700D5CA8A /* CustomViewInSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E85A5F6231DE20700D5CA8A /* CustomViewInSplitView.swift */; };
 		2E85A5F9231DE21100D5CA8A /* CustomViewInSplitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E85A5F8231DE21100D5CA8A /* CustomViewInSplitView.xib */; };
@@ -29,6 +33,10 @@
 		2E0A7F7F23173EF10056EC83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E0A7F8223173EF10056EC83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E0A7F8423173EF10056EC83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E64BA752330053300251C89 /* SessionSummaryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSummaryVC.swift; sourceTree = "<group>"; };
+		2E64BA7E2331A64900251C89 /* BenchmarkVCCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkVCCVCell.swift; sourceTree = "<group>"; };
+		2E64BA7F2331A64900251C89 /* BenchmarkVCCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BenchmarkVCCVCell.xib; sourceTree = "<group>"; };
+		2E64BA832331A67800251C89 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		2E85A5F2231DDE8E00D5CA8A /* CustomButtonInProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonInProfileVC.swift; sourceTree = "<group>"; };
 		2E85A5F6231DE20700D5CA8A /* CustomViewInSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewInSplitView.swift; sourceTree = "<group>"; };
 		2E85A5F8231DE21100D5CA8A /* CustomViewInSplitView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomViewInSplitView.xib; sourceTree = "<group>"; };
@@ -81,6 +89,23 @@
 			path = Otus_FirstHomeWork;
 			sourceTree = "<group>";
 		};
+		2E64BA74233004F900251C89 /* SessionSummaryVC */ = {
+			isa = PBXGroup;
+			children = (
+				2E64BA752330053300251C89 /* SessionSummaryVC.swift */,
+			);
+			path = SessionSummaryVC;
+			sourceTree = "<group>";
+		};
+		2E64BA7D2331A60800251C89 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2E64BA7E2331A64900251C89 /* BenchmarkVCCVCell.swift */,
+				2E64BA7F2331A64900251C89 /* BenchmarkVCCVCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		2E85A5F1231DDE6D00D5CA8A /* Customize */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +144,7 @@
 		2EAE3CA823252DDC007DFF5F /* BenchmarkVC */ = {
 			isa = PBXGroup;
 			children = (
+				2E64BA7D2331A60800251C89 /* Cells */,
 				2EAE3CA923252DF4007DFF5F /* BenchmarkVC.swift */,
 			);
 			path = BenchmarkVC;
@@ -127,6 +153,7 @@
 		2EAE3CAB23252E40007DFF5F /* FeedVC */ = {
 			isa = PBXGroup;
 			children = (
+				2E64BA74233004F900251C89 /* SessionSummaryVC */,
 				2EAE3CB023255733007DFF5F /* ThirdFeedVC */,
 				2E0A7F7A23173EED0056EC83 /* FeedVC.swift */,
 			);
@@ -137,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				2EAE3CA523252CCA007DFF5F /* ViewControllerLifecycleBehavior.swift */,
+				2E64BA832331A67800251C89 /* NibLoadable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -218,6 +246,7 @@
 				2E0A7F8323173EF10056EC83 /* LaunchScreen.storyboard in Resources */,
 				2E0A7F8023173EF10056EC83 /* Assets.xcassets in Resources */,
 				2E85A5F9231DE21100D5CA8A /* CustomViewInSplitView.xib in Resources */,
+				2E64BA812331A64900251C89 /* BenchmarkVCCVCell.xib in Resources */,
 				2E0A7F7E23173EED0056EC83 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,9 +263,12 @@
 				2EAE3CAF232550C7007DFF5F /* ProfileVC.swift in Sources */,
 				2EAE3CAA23252DF4007DFF5F /* BenchmarkVC.swift in Sources */,
 				2EAE3CB22325574B007DFF5F /* ThirdFeedVC.swift in Sources */,
+				2E64BA842331A67800251C89 /* NibLoadable.swift in Sources */,
 				2E85A5F7231DE20700D5CA8A /* CustomViewInSplitView.swift in Sources */,
 				2EAE3CA623252CCA007DFF5F /* ViewControllerLifecycleBehavior.swift in Sources */,
 				2E85A5F3231DDE8E00D5CA8A /* CustomButtonInProfileVC.swift in Sources */,
+				2E64BA762330053300251C89 /* SessionSummaryVC.swift in Sources */,
+				2E64BA802331A64900251C89 /* BenchmarkVCCVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

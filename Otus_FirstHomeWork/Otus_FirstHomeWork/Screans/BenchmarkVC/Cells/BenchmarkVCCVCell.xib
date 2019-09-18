@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BenchmarkVCCVCell" customModule="Otus_FirstHomeWork" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="266" height="169"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="266" height="169"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dP6-iE-g3d">
+                        <rect key="frame" x="0.0" y="0.0" width="266" height="169"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="center" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jTn-NJ-F6v">
+                                <rect key="frame" x="0.0" y="0.0" width="266" height="169"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Прошло времени в " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huP-de-Qa0">
+                                        <rect key="frame" x="0.0" y="0.0" width="266" height="84.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nu2-Tt-8de">
+                                        <rect key="frame" x="0.0" y="84.5" width="266" height="84.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="nu2-Tt-8de" firstAttribute="height" secondItem="huP-de-Qa0" secondAttribute="height" id="igA-o1-ccb"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.34509803919999998" green="0.30196078430000001" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jTn-NJ-F6v" secondAttribute="trailing" id="0VB-pU-AAV"/>
+                            <constraint firstAttribute="bottom" secondItem="jTn-NJ-F6v" secondAttribute="bottom" id="TVJ-0H-VfZ"/>
+                            <constraint firstItem="jTn-NJ-F6v" firstAttribute="top" secondItem="dP6-iE-g3d" secondAttribute="top" id="dy0-ID-7dd"/>
+                            <constraint firstItem="jTn-NJ-F6v" firstAttribute="leading" secondItem="dP6-iE-g3d" secondAttribute="leading" id="z8e-cd-FCu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="dP6-iE-g3d" secondAttribute="trailing" id="EPs-11-SLc"/>
+                <constraint firstItem="dP6-iE-g3d" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="md7-No-8Cy"/>
+                <constraint firstItem="dP6-iE-g3d" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sap-Hf-zdq"/>
+                <constraint firstAttribute="bottom" secondItem="dP6-iE-g3d" secondAttribute="bottom" id="yCj-5N-WJy"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="266" height="169"/>
+            <connections>
+                <outlet property="bgView" destination="dP6-iE-g3d" id="UWt-ug-a6s"/>
+                <outlet property="nameOfCellLabel" destination="huP-de-Qa0" id="yQW-Oj-vqb"/>
+                <outlet property="timeLabel" destination="nu2-Tt-8de" id="kYi-H4-h03"/>
+            </connections>
+            <point key="canvasLocation" x="68.115942028985515" y="192.52232142857142"/>
+        </collectionViewCell>
+    </objects>
+</document>
