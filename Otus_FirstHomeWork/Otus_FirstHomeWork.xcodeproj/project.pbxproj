@@ -12,6 +12,9 @@
 		2E0A7F7E23173EED0056EC83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E0A7F7C23173EED0056EC83 /* Main.storyboard */; };
 		2E0A7F8023173EF10056EC83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E0A7F7F23173EF10056EC83 /* Assets.xcassets */; };
 		2E0A7F8323173EF10056EC83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E0A7F8123173EF10056EC83 /* LaunchScreen.storyboard */; };
+		2E4894FA2337D7D700925E8E /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4894F92337D7D700925E8E /* TimerModel.swift */; };
+		2E5D81ED23383CE100708757 /* GridCVLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5D81EC23383CE100708757 /* GridCVLayout.swift */; };
+		2E5D81EF233848EC00708757 /* SimplyTableCVLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5D81EE233848EC00708757 /* SimplyTableCVLayout.swift */; };
 		2E64BA762330053300251C89 /* SessionSummaryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E64BA752330053300251C89 /* SessionSummaryVC.swift */; };
 		2E64BA802331A64900251C89 /* BenchmarkVCCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E64BA7E2331A64900251C89 /* BenchmarkVCCVCell.swift */; };
 		2E64BA812331A64900251C89 /* BenchmarkVCCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E64BA7F2331A64900251C89 /* BenchmarkVCCVCell.xib */; };
@@ -33,6 +36,9 @@
 		2E0A7F7F23173EF10056EC83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E0A7F8223173EF10056EC83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E0A7F8423173EF10056EC83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E4894F92337D7D700925E8E /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
+		2E5D81EC23383CE100708757 /* GridCVLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCVLayout.swift; sourceTree = "<group>"; };
+		2E5D81EE233848EC00708757 /* SimplyTableCVLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplyTableCVLayout.swift; sourceTree = "<group>"; };
 		2E64BA752330053300251C89 /* SessionSummaryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSummaryVC.swift; sourceTree = "<group>"; };
 		2E64BA7E2331A64900251C89 /* BenchmarkVCCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkVCCVCell.swift; sourceTree = "<group>"; };
 		2E64BA7F2331A64900251C89 /* BenchmarkVCCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BenchmarkVCCVCell.xib; sourceTree = "<group>"; };
@@ -76,6 +82,8 @@
 		2E0A7F7723173EED0056EC83 /* Otus_FirstHomeWork */ = {
 			isa = PBXGroup;
 			children = (
+				2E5D81E323382A5600708757 /* CVLayouts */,
+				2E4894F82337D77200925E8E /* Models */,
 				2EAE3CAC23252E9A007DFF5F /* Protocols */,
 				2E85A5F4231DE1D000D5CA8A /* CustomViews */,
 				2E85A5F1231DDE6D00D5CA8A /* Customize */,
@@ -87,6 +95,23 @@
 				2E0A7F8423173EF10056EC83 /* Info.plist */,
 			);
 			path = Otus_FirstHomeWork;
+			sourceTree = "<group>";
+		};
+		2E4894F82337D77200925E8E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2E4894F92337D7D700925E8E /* TimerModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2E5D81E323382A5600708757 /* CVLayouts */ = {
+			isa = PBXGroup;
+			children = (
+				2E5D81EC23383CE100708757 /* GridCVLayout.swift */,
+				2E5D81EE233848EC00708757 /* SimplyTableCVLayout.swift */,
+			);
+			path = CVLayouts;
 			sourceTree = "<group>";
 		};
 		2E64BA74233004F900251C89 /* SessionSummaryVC */ = {
@@ -261,12 +286,15 @@
 				2E0A7F7B23173EED0056EC83 /* FeedVC.swift in Sources */,
 				2E0A7F7923173EED0056EC83 /* AppDelegate.swift in Sources */,
 				2EAE3CAF232550C7007DFF5F /* ProfileVC.swift in Sources */,
+				2E5D81ED23383CE100708757 /* GridCVLayout.swift in Sources */,
 				2EAE3CAA23252DF4007DFF5F /* BenchmarkVC.swift in Sources */,
 				2EAE3CB22325574B007DFF5F /* ThirdFeedVC.swift in Sources */,
 				2E64BA842331A67800251C89 /* NibLoadable.swift in Sources */,
 				2E85A5F7231DE20700D5CA8A /* CustomViewInSplitView.swift in Sources */,
 				2EAE3CA623252CCA007DFF5F /* ViewControllerLifecycleBehavior.swift in Sources */,
 				2E85A5F3231DDE8E00D5CA8A /* CustomButtonInProfileVC.swift in Sources */,
+				2E4894FA2337D7D700925E8E /* TimerModel.swift in Sources */,
+				2E5D81EF233848EC00708757 /* SimplyTableCVLayout.swift in Sources */,
 				2E64BA762330053300251C89 /* SessionSummaryVC.swift in Sources */,
 				2E64BA802331A64900251C89 /* BenchmarkVCCVCell.swift in Sources */,
 			);
